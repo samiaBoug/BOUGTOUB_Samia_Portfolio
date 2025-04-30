@@ -8,14 +8,49 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Style Switcher -->
     <link rel="stylesheet" href="css/style-switcher.css" />
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"/>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2"disabled/>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
     <!-- font used -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Main Container Start -->
@@ -30,22 +65,21 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#home" class="active lang" data-lang="en"><i class="fa fa-home"></i>Home</a>
-            <a href="#home" class="active lang" data-lang="fr"><i class="fa fa-home"></i>Acceuil</a>
+            <a href="#home" class="active lang"  data-key="home"
+              ><i class="fa fa-home" ></i></a
+            >
           </li>
           <li>
-            <a href="#about" class="lang"><i class="fa fa-user"></i>About</a>
-            <a href="#about" class="lang"><i class="fa fa-user"></i>A propos</a>
-
+            <a href="#about" class="lang" data-key="about"><i class="fa fa-user" ></i></a>
           </li>
           <li>
-            <a href="#service"><i class="fa fa-list"></i>Services</a>
+            <a href="#service" data-key="services"><i class="fa fa-list" ></i></a>
           </li>
           <li>
-            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#portfolio" data-key="portfolio"><i class="fa fa-briefcase"></i></a>
           </li>
           <li>
-            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+            <a href="#contact" data-key="contact"><i class="fa fa-comments"></i></a>
           </li>
           <h1></h1>
         </ul>
@@ -58,24 +92,22 @@
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
-                <h3 class="hello">
-                  Hello, my name is <span class="name">Bougtoub Samia</span>
-                </h3>
-                <h3 class="my-profession">
-                  I'm a <span class="typing"> Web developer</span>
-                </h3>
-                <p>
-                  I'm a passionate web developer with a knack for creating
-                  dynamic and responsive websites. I started my web development
-                  journey 2 years ago, and since then, I have continued to hone
-                  my skills to deliver seamless and ...
+                <div class="display">
+                  <h3 class="hello" data-key="hello"></h3>
+                  <span class="name">Bougtoub Samia</span>
+                </div>
+                <div class="display">
+                  <h3 class="my-profession" data-key="profession"></h3>
+                  <span class="typing"> Web developer</span>
+                </div>
+                <p data-key="hero_text">
+                  
                 </p>
-                <a href="CV Zakaria Azizi.pdf" target="_blank" class="btn"
-                  >Download CV</a
+                <a href="CV Bougtoub Samia.pdf" target="_blank" class="btn" data-key="download_cv"></a
                 >
               </div>
               <div class="home-img padd-15">
-                <img src="images/hero.jpg" alt="hero images" />
+                <img src="images/photo.png" alt="hero images" />
               </div>
             </div>
           </div>
@@ -86,60 +118,64 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>About Me</h2>
+                <h2 data-key="about_me"></h2>
               </div>
             </div>
             <div class="row">
               <div class="about-content padd-15">
                 <div class="row">
                   <div class="about-text padd-15">
-                    <h3>I'm Samia  and <span>Web Developer</span></h3>
-                    <p>
+                    <div class="display">
+                     <h3 data-key="im"> </h3>
+                    <span>Web Developer</span>   
+                    </div>
                     
-                    </p>
+                    <p></p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="personal-info padd-15">
                     <div class="row">
                       <div class="info-item padd-15">
-                        <p>Birthday : <span>22 Fabruary 1995</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p data-key="website"> <span >https://samiaboug.github.io/Portfolio_BOUGTOUB_Samia/</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Age : <span>30</span></p>
+                        <p data-key="email"> <span>bougtoubsamia@gmail.com</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Website : <span>www.domain.com</span></p>
+                        <p data-key="country"> <span data-key="morocco"></span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Email : <span>bougtoubsamia@gmail.com</span></p>
+                        <p data-key="phone"> <span>+212697022588</span></p>
                       </div>
                       <div class="info-item padd-15">
-                        <p>Pays : <span>Morocco</span></p>
+                        <p data-key="city"> <span>Tangier</span></p>
                       </div>
-                      <div class="info-item padd-15">
-                        <p>Phone : <span>+212697022588</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>City : <span>Tangier</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Freelance : <span>Available</span></p>
-                      </div>
+                     
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
                         <a
                           href="#contact"
                           date-section-index="1"
-                          class="btn hire-me"
-                          >Hire Me</a
+                          class="btn hire-me" data-key="hire_me"
+                          ></a
                         >
                       </div>
                     </div>
                   </div>
                   <div class="skills padd-15">
                     <div class="row">
+                         <div class="skill-item pad">
+                        <h5>VUE.JS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 60%"></div>
+                          <div class="skill-precent">60%</div>
+                        </div>
+                      </div>
                       <div class="skill-item pad">
                         <h5>JS</h5>
                         <div class="progress">
@@ -159,6 +195,7 @@
                         <div class="progress">
                           <div class="progress-in" style="width: 96%"></div>
                           <div class="skill-precent">96%</div>
+                          
                         </div>
                       </div>
 
@@ -174,7 +211,7 @@
                 </div>
                 <div class="row">
                   <div class="education padd-15">
-                    <h3 class="title">Education</h3>
+                    <h3 class="title" data-key="education"></h3>
                     <div class="row">
                       <div class="timeline-box padd-15">
                         <div class="timeline shadow-dark">
@@ -182,14 +219,10 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i>24 April 2024
+                              <i class="fa fa-calendar"></i>
                             </h3>
-                            <h4 class="timeline-title">
-                             
-                            </h4>
-                            <p class="timeline-text">
-                             
-                            </p>
+                            <h4 class="timeline-title"></h4>
+                            <p class="timeline-text"></p>
                           </div>
                           <!-- timeline item -->
                           <div class="timeline-item">
@@ -197,12 +230,8 @@
                             <h3 class="timeline-date">
                               <i class="fa fa-calendar"></i>
                             </h3>
-                            <h4 class="timeline-title">
-                              
-                            </h4>
-                            <p class="timeline-text">
-                              
-                            </p>
+                            <h4 class="timeline-title"></h4>
+                            <p class="timeline-text"></p>
                           </div>
                           <!-- timeline item -->
                           <div class="timeline-item">
@@ -210,35 +239,26 @@
                             <h3 class="timeline-date">
                               <i class="fa fa-calendar"></i>
                             </h3>
-                            <h4 class="timeline-title">
-                              
-                            </h4>
-                            <p class="timeline-text">
-                              
-                            </p>
+                            <h4 class="timeline-title"></h4>
+                            <p class="timeline-text"></p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="experience padd-15">
-                    <h3 class="title">Experience</h3>
+                    <h3 class="title" data-key="experience"></h3>
                     <div class="row">
                       <div class="timeline-box padd-15">
                         <div class="timeline shadow-dark">
-                        
                           <!-- timeline item -->
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
                               <i class="fa fa-calendar"></i>
                             </h3>
-                            <h4 class="timeline-title">
-                             
-                            </h4>
-                            <p class="timeline-text">
-                              
-                            </p>
+                            <h4 class="timeline-title"></h4>
+                            <p class="timeline-text"></p>
                           </div>
                         </div>
                       </div>
@@ -255,7 +275,7 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Services</h2>
+                <h2 data-key="services"></h2>
               </div>
             </div>
             <div class="row">
@@ -265,10 +285,10 @@
                   <div class="icon">
                     <i class="fa fa-mobile-alt"></i>
                   </div>
-                  <h4>Responsive Design</h4>
-                  <p>
-                    Creating visually appealing and user-friendly interfaces
-                    that work seamlessly across all devices.
+                  <!-- TODO: remplire les informations -->
+                  <h4 data-key="responsive_design"></h4>
+                  <p data-key="responsive_description">
+                    
                   </p>
                 </div>
               </div>
@@ -279,10 +299,9 @@
                   <div class="icon">
                     <i class="fa fa-laptop-code"></i>
                   </div>
-                  <h4>Full-Stack Development</h4>
-                  <p>
-                    Building robust and scalable web applications from front-end
-                    to back-end using the latest technologies.
+                  <h4 data-key="full_stack"></h4>
+                  <p data-key="full_stack_description">
+                    
                   </p>
                 </div>
               </div>
@@ -293,10 +312,9 @@
                   <div class="icon">
                     <i class="fa fa-palette"></i>
                   </div>
-                  <h4>UI/UX Design</h4>
-                  <p>
-                    Designing intuitive and engaging user experiences with a
-                    focus on aesthetics and usability.
+                  <h4 data-key="ui_ux"></h4>
+                  <p data-key="ui_ux_description">
+                    
                   </p>
                 </div>
               </div>
@@ -307,10 +325,9 @@
                   <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>Custom Software Development</h4>
-                  <p>
-                    Providing tailored software solutions to meet unique
-                    business needs and enhance operational efficiency.
+                  <h4 data-key="custom_software"></h4>
+                  <p data-key="custom_software_description">
+                   
                   </p>
                 </div>
               </div>
@@ -321,26 +338,15 @@
                   <div class="icon">
                     <i class="fa fa-search"></i>
                   </div>
-                  <h4>SEO Optimization</h4>
-                  <p>
-                    Improving website visibility and ranking on search engines
-                    to drive more organic traffic.
+                  <h4 data-key="seo"></h4>
+                  <p data-key="seo_description">
+                    
                   </p>
                 </div>
               </div>
               <!-- Service item End  -->
               <!-- Service item Start -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa fa-bullhorn"></i>
-                  </div>
-                  <h4>Digital Marketing</h4>
-                  <p>
-                    
-                  </p>
-                </div>
-              </div>
+             
               <!-- Service item End  -->
             </div>
           </div>
@@ -352,12 +358,12 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Portfolio</h2>
+                <h2 data-key="portfolio"></h2>
               </div>
             </div>
             <div class="row">
               <div class="portfolio-heading padd-15">
-                <h2>My Last Projects :</h2>
+                <h2 data-key="portfolio_title"></h2>
               </div>
             </div>
             <div class="row">
@@ -389,17 +395,17 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Contact</h2>
+                <h2 data-key="contact"></h2>
               </div>
             </div>
 
-            <h3 class="contact-title">Have You Any Question ?</h3>
-            <h4 class="contact-sub-title">I'M AT YOUR SERVICES</h4>
+            <h3 class="contact-title" data-key="contact_title"></h3>
+            <h4 class="contact-sub-title" data-key="contact_subtitle"></h4>
             <div class="row">
               <!-- Contact info item start -->
               <div class="contact-info-item padd-15">
                 <div class="icon"><i class="fa fa-phone"></i></div>
-                <h4>Call Me On</h4>
+                <h4 data-key="call_me"></h4>
                 <p>+212 697022588</p>
               </div>
               <!-- Contact info item End -->
@@ -425,9 +431,9 @@
               </div>
               <!-- Contact info item End -->
             </div>
-            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-            <h4 class="contact-sub-title padd-15">
-              I'M VERY RESPOSIVE TO MESSAGES
+            <h3 class="contact-title padd-15" data-key="send_email"></h3>
+            <h4 class="contact-sub-title padd-15" data-key="responsive_message">
+              
             </h4>
             <div class="row">
               <div class="contact-form padd-15">
@@ -483,7 +489,7 @@
                   </div>
                   <div class="row">
                     <div class="form-item col-12 padd-15">
-                      <button type="submit" class="btn">Send Message</button>
+                      <button type="submit" class="btn" data-key="send_email"></button>
                     </div>
                   </div>
                 </form>
@@ -498,24 +504,22 @@
     <!-- Main Container End -->
     <!-- Style Switcher Start -->
     <div class="style-switcher">
-      <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"></i>
-      </div>
+      
       <div class="day-night s-icon">
         <i class="fas"></i>
       </div>
-      <h4>Theme Colors</h4>
-      <div class="colors">
-        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      <div class="style-switcher-toggler s-icon">
+        <i class="fa-solid fa-language"></i>
       </div>
+       <div>
+            <button class="lang-switch" data-lang="en">EN</button>
+            <button class="lang-switch" data-lang="fr">FR</button>
+        </div>
     </div>
+
     <!-- Style Switcher End -->
     <!-- Code js -->
-    <script src="js/script.js"></script>
+
     <script src="js/style-switcher.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
@@ -523,5 +527,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-
 /* ============== typing animation ==============*/
 document.addEventListener('DOMContentLoaded', (event) => {
             var typed = new Typed(".typing", {
@@ -84,4 +83,37 @@ function asideSectionTogglerBtn() {
     {
         allSection[i].classList.toggle("open"); 
     }
+}
+$(document).ready(function () {
+  let currentLang = "en"; // Langue par défaut
+
+  // Fonction pour charger les traductions
+  function loadTranslations(lang) {
+    $.getJSON(`lang/${lang}.json`, function (data) {
+      $("[data-key]").each(function () {
+        const key = $(this).data("key");
+        if (data[key]) {
+          // Vérifie si l'élément contient un enfant <span>
+          if ($(this).find(".name").length > 0) {
+            $(this).find(".name").text(data[key]);
+          } else {
+            $(this).text(data[key]);
+          }
+        }
+      });
+    });
+  }
+
+  // Changer la langue au clic sur un bouton
+  $(".lang-switch").click(function () {
+    const lang = $(this).data("lang");
+    if (lang !== currentLang) {
+      currentLang = lang;
+      loadTranslations(lang);
     }
+  });
+
+  // Charger la langue par défaut
+    loadTranslations(currentLang);
+
+});
